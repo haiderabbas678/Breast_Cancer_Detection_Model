@@ -56,7 +56,7 @@ os.environ['KAGGLE_KEY'] = "your_api_key"
 ---
 
 ### 📊 Data Set 
-Name: Breast Cancer Wisconsin (Diagnostic) Dataset
+Name: Breast Cancer Wisconsin (Diagnostic) Dataset /n
 Source: Kaggle
 Description: This dataset contains 569 samples of breast cancer cell nuclei with 32 features extracted from digitized images.
 Target Variable: diagnosis
