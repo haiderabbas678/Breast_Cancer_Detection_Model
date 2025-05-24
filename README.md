@@ -39,12 +39,10 @@ This project implements a **Breast Cancer Classification Model** using the **Wis
 git clone https://github.com/haiderabbas678/Breast_Cancer_Detection_Model.git 
 cd Breast_Cancer_Detection_Model
 ```
-
 ### 2. Install Dependencies
 ```bash
 pip install pandas numpy scikit-learn jupyter matplotlib seaborn kaggle
 ```
-
 ```Python
 os.environ['KAGGLE_USERNAME'] = "your_username"
 os.environ['KAGGLE_KEY'] = "your_api_key"
@@ -54,29 +52,42 @@ os.environ['KAGGLE_KEY'] = "your_api_key"
 !unzip breast-cancer-wisconsin-data.zip
 ```
 ---
-
 ### 📊 Data Set 
 Name: Breast Cancer Wisconsin (Diagnostic) Dataset \
 Source: Kaggle \
 Description: This dataset contains 569 samples of breast cancer cell nuclei with 32 features extracted from digitized images.\
 Target Variable: diagnosis\
 M = Malignant (Cancerous) – 212 cases\
-B = Benign (Non-Cancerous) – 357 cases\
+B = Benign (Non-Cancerous) – 357 cases
+
 ### 🧾 Key Features:
-Radius, Texture, Perimeter, Area, Smoothness
-Compactness, Concavity, Concave Points
-Symmetry, Fractal Dimension
+Radius, Texture, Perimeter, Area, Smoothness \
+Compactness, Concavity, Concave Points \
+Symmetry, Fractal Dimension \
 (All measured as mean, standard error, and worst values)
+
 ### 🧹 Data Preprocessing:
-Removed missing/unneeded columns: Unnamed: 32
-Encoded diagnosis labels: M → 1, B → 0
-Scaled features using StandardScaler
-Split data: 75% training, 25% testing
-### 🧪 Model Performance
-Model Used: Logistic Regression
-Evaluation Metrics:
-Accuracy Score: 97.9%
-Confusion Matrix:
+Removed missing/unneeded columns: Unnamed: 32 \
+Encoded diagnosis labels: M → 1, B → 0 \
+Scaled features using StandardScaler \
+Split data: 75% training, 25% testing 
+
+### 🧪 Model Performance 
+Model Used: Logistic Regression \
+Evaluation Metrics: \
+Accuracy Score: 97.9% \
+Confusion Matrix: 
+```Python
+[[52  3]
+ [ 2 90]]
+```
+### ✅ Results Summary:
+Out of 147 test samples: \
+52 Benign correctly predicted \
+90 Malignant correctly predicted \
+Only 3 Benign misclassified as Malignant \
+Only 2 Malignant misclassified as Benign \
+This high accuracy demonstrates that the model is effective at distinguishing between benign and malignant tumors based on the provided clinical features.
 
 
 
