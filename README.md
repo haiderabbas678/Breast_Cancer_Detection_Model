@@ -44,7 +44,7 @@ cd Breast_Cancer_Detection_Model
 ```bash
 pip install pandas numpy scikit-learn jupyter matplotlib seaborn kaggle
 
-```python
+Python
 os.environ['KAGGLE_USERNAME'] = "your_username"
 os.environ['KAGGLE_KEY'] = "your_api_key"
 ```
