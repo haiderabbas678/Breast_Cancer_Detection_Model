@@ -52,6 +52,31 @@ os.environ['KAGGLE_KEY'] = "your_api_key"
 ```bash
 !kaggle datasets download -d uciml/breast-cancer-wisconsin-data
 !unzip breast-cancer-wisconsin-data.zip
+```
+
+📊 ### Dataset
+Name: Breast Cancer Wisconsin (Diagnostic) Dataset
+Source: Kaggle
+Description: This dataset contains 569 samples of breast cancer cell nuclei with 32 features extracted from digitized images.
+Target Variable: diagnosis
+M = Malignant (Cancerous) – 212 cases
+B = Benign (Non-Cancerous) – 357 cases
+🧾 Key Features:
+Radius, Texture, Perimeter, Area, Smoothness
+Compactness, Concavity, Concave Points
+Symmetry, Fractal Dimension
+(All measured as mean, standard error, and worst values)
+🧹 Data Preprocessing:
+Removed missing/unneeded columns: Unnamed: 32
+Encoded diagnosis labels: M → 1, B → 0
+Scaled features using StandardScaler
+Split data: 75% training, 25% testing
+🧪 Model Performance
+Model Used: Logistic Regression
+Evaluation Metrics:
+Accuracy Score: 97.9%
+Confusion Matrix:
+
 
 
 
