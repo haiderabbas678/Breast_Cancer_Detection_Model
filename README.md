@@ -38,7 +38,10 @@ This project implements a **Breast Cancer Classification Model** using the **Wis
 ```bash
 git clone https://github.com/haiderabbas678/Breast_Cancer_Detection_Model.git 
 cd Breast_Cancer_Detection_Model
+```
 
 ### 2. Install Dependencies
 ```bash
 pip install pandas numpy scikit-learn jupyter matplotlib seaborn kaggle
+```
+
