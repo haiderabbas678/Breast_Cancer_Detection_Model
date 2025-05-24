@@ -43,5 +43,11 @@ cd Breast_Cancer_Detection_Model
 ### 2. Install Dependencies
 ```bash
 pip install pandas numpy scikit-learn jupyter matplotlib seaborn kaggle
-```
+``` python
+os.environ['KAGGLE_USERNAME'] = "your_username"
+os.environ['KAGGLE_KEY'] = "your_api_key"
+```bash
+!kaggle datasets download -d uciml/breast-cancer-wisconsin-data
+!unzip breast-cancer-wisconsin-data.zip
+
 
